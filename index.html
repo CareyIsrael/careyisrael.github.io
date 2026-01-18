@@ -1,247 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carey Israel Pedapaga's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <style>
-        /* Ensure bullets are displayed properly */
-        .list-unstyled {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Page Load Animation */
-        body {
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Header image hover effect */
-        .header-img {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .header-img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        /* Fade-in effect for sections */
-        .fade-in {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-        }
-        
-        /* Button hover effects */
-        .btn-primary {
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        
-        .btn-primary:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-        }
-        
-        /* Text and icon animations */
-        .animate-text {
-            animation: slideUp 0.6s ease-out;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        
-        .animate-icon {
-            transition: transform 0.3s ease;
-        }
-
-        .animate-icon:hover {
-            transform: scale(1.2);
-        }
-        
-        /* Add a bit of shadow to section headers */
-        h2 {
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carey Israel | Electrical Engineer Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8 text-left animate-text">
-                    <h1 class="display-4">Carey Israel Pedapaga</h1>
-                    <p class="lead">187 Rankin Ave, Windsor, ON, N9B2R4 | +1 (647)-746-1311 | <a href="mailto:careyisrael3@gmail.com" class="text-white">careyisrael3@gmail.com</a></p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/carey-israel-1209081b1/" target="_blank" class="text-white mr-3 animate-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/CareyIsrael" target="_blank" class="text-white animate-icon"><i class="fab fa-github"></i> GitHub</a>
-                    </p>
+
+<header>
+    <div class="header-left">
+        <h1>Carey Israel</h1>
+        <p>Electrical Engineer | Smiths Falls, ON | (647)-746-1311 | 
+            <a href="mailto:careyisrael3@gmail.com" class="email-link">careyisrael3@gmail.com</a>
+        </p>
+    </div>
+    <div class="header-right">
+        <img src="D:\portfolio\1700178296255.jpeg" alt="Carey Israel" class="profile-photo">
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+</nav>
+
+<main class="container">
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Electrical Engineer with a Master of Engineering in Electrical and Computer Engineering and practical experience in designing and supporting electrical systems in industrial and manufacturing environments. Currently at Eaton Corporation, contributing to electrical distribution and control system designs, including drafting, load calculations, and standards compliance. Skilled in Power Systems, Power Electronics, Control Systems, Electrical Drawings, and software tools such as Altium Designer, SOLIDWORKS, PLC & HMI programming, AutoCAD Electrical, and Revit (MEP). IEEE member pursuing P.Eng licensure in Canada.</p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Electrical Design</h3>
+                <div class="skill-list">
+                    <span class="skill-badge">LV/MV Power Distribution</span>
+                    <span class="skill-badge">Load Calculations & Equipment Sizing</span>
+                    <span class="skill-badge">SLD, Panel & Cable Schedules</span>
+                    <span class="skill-badge">Control Panels, MCCs, Lighting & Power Layouts</span>
                 </div>
-                <div class="col-md-4 text-right">
-                    <img src="1700178296255.jpeg" alt="Carey Israel Pedapaga" class="img-fluid rounded-circle shadow header-img">
+            </div>
+            <div class="skill-category">
+                <h3>Software & Tools</h3>
+                <div class="skill-list">
+                    <span class="skill-badge">AutoCAD / AutoCAD Electrical / Revit (MEP)</span>
+                    <span class="skill-badge">Altium Designer / SOLIDWORKS</span>
+                    <span class="skill-badge">MATLAB / Python / C / SQL / HTML</span>
+                    <span class="skill-badge">Siemens TIA Portal (PLC & HMI)</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Standards & Documentation</h3>
+                <div class="skill-list">
+                    <span class="skill-badge">CEC, NEC, IEEE, CSA</span>
+                    <span class="skill-badge">Technical Drawings & Documentation</span>
+                    <span class="skill-badge">Design Reviews & Revision Control</span>
+                    <span class="skill-badge">Leadership & Coordination</span>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="container my-5">
-        <section id="summary" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Summary</h2>
-            <p>Competent and self-motivated professional with over 3+ years of experience in Python and Web Designing with strong analytical and problem-solving skills. Practical experience in Python, HTML&CSS and Beginner-level knowledge in SAP Basis. Experience in MATLAB coding, simulation and AnySYS Motor CAD. Passionate about enhancing my knowledge and skill set in Full Stack Development, ML and AI. Excellent organizational abilities, meticulousness, and the capacity to gather requirements, learn new technological tools, and operate independently and cooperatively in a fast-paced environment.</p>
-        </section>
-
-        <section id="technical-skills" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Technical Skills</h2>
-            <ul class="list-unstyled">
-                <li><strong>Languages:</strong> C, Python, HTML, CSS, JavaScript, SQL</li>
-                <li><strong>Databases:</strong> MongoDB</li>
-                <li><strong>Version Control Tools:</strong> Git</li>
-                <li><strong>Frameworks:</strong> Pandas, NumPy, Django, Tkinter, BootStrap.</li>
-                <li><strong>Operating Systems:</strong> Microsoft Windows, Linux</li>
-                <li><strong>Tools:</strong> VS Code, PyCharm, Jupyter Notebook, Google Collab, MATLAB, ANSYS Motor CAD</li>
-            </ul>
-        </section>
-
-        <section id="education" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Education</h2>
-            <div class="mb-4">
-                <h3>Master of Engineering in Electrical and Computers</h3>
-                <p>University of Windsor, Windsor, Ontario (May 2023 - Present)</p>
-            </div>
-            <div>
-                <h3>Bachelor of Technology in Electrical and Electronics</h3>
-                <p>Vidya Jyothi Institute of Technology, Hyderabad (June 2017 - Aug 2021)</p>
-            </div>
-        </section>
-
-        <section id="experience" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Professional Experience</h2>
-            <div class="mb-4">
-                <h3>Robotics Coach</h3>
-                <p>Windsor Day Camps., Windsor, Ontario (Jan 2023 - Present)</p>
-                <ul class="list-unstyled">
-                    <li>Teaching, designing, and programming Lego based Robots for kids of grade 2-10, emphasizing a holistic approach to fostering STEM skills and creativity through hands-on robotics education.</li>
-                    <li>Skills used: Python, HTML/CSS, JavaScript, Block coding.</li>
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-list">
+            <div class="job">
+                <h3>Electrical Designer | Eaton Corporation</h3>
+                <span>Perth, ON | Nov 2024 - Present</span>
+                <ul>
+                    <li>Designed and updated LV electrical distribution systems (up to 600V), including SLD, wiring schematics, and panel layouts compliant with CEC, CSA, IEEE standards.</li>
+                    <li>Performed load calculations, cable sizing, and equipment selection for industrial panels and MCCs.</li>
+                    <li>Prepared electrical drawings, panel and cable schedules using AutoCAD Electrical; managed revisions.</li>
+                    <li>Supported control/power panel design including BOM prep and layout coordination with AutoCAD Electrical & SOLIDWORKS.</li>
+                    <li>Conducted functional and high-voltage testing for breakers and PLC load centers; troubleshooting.</li>
                 </ul>
             </div>
-            <div class="mb-4">
-                <h3>Project Engineer</h3>
-                <p>WIPRO, Hyderabad, India (Oct 2021 - Apr 2023)</p>
-                <ul class="list-unstyled">
-                    <li>Responsible for overseeing SAP systems, conducting system installations and configurations, managing transport operations.</li>
-                    <li>Served as a Hiring Coordinator within the SAP Hiring team.</li>
+            <div class="job">
+                <h3>Robotics Coach | Windsor Day Camps</h3>
+                <span>Windsor, ON | Jan 2023 - Sep 2025</span>
+                <ul>
+                    <li>Guided students on electrical, electronics, and robotics projects using Python and web design.</li>
+                    <li>Worked with sensors, motors, wiring, and basic control logic.</li>
+                    <li>Troubleshot hardware, wiring, and programming issues.</li>
                 </ul>
             </div>
-            <div class="mb-4">
-                <h3>Coding Tutor</h3>
-                <p>TURITO, Hyderabad, India (Remote) (Jun 2022 - Oct 2022)</p>
-                <ul class="list-unstyled">
-                    <li>Provided coding instructions to elementary and high school students globally teaching Python, HTML, CSS, JavaScript, and SQL through diverse teaching techniques helping them achieve proficiency.</li>
+            <div class="job">
+                <h3>Project Engineer | Wipro</h3>
+                <span>Hyderabad, India | Oct 2021 - Apr 2023</span>
+                <ul>
+                    <li>Supported SAP Basis system implementation, configuration, and management.</li>
+                    <li>Resolved issues promptly and ensured accurate data reporting.</li>
+                    <li>Conducted data analysis using Python and SQL for ETL projects.</li>
                 </ul>
             </div>
-            <div>
-                <h3>Coding Teacher</h3>
-                <p>Bright-Champs, Hyderabad, India (Remote) (Jul 2021 - Nov 2021)</p>
-                <ul class="list-unstyled">
-                    <li>Facilitated instruction of children grades 3-11 in coding with block coding, Python, HTML, JavaScript, and SQL through diverse teaching techniques helping them achieve great proficiency.</li>
+            <div class="job">
+                <h3>Embedded Systems Intern | VI Solutions</h3>
+                <span>Bangalore, India | Nov 2020 - Jan 2021</span>
+                <ul>
+                    <li>Developed and tested embedded firmware in C/C++ for microcontroller systems.</li>
+                    <li>Interfaced sensors and peripherals using UART, SPI, I2C.</li>
+                    <li>Assisted with hardware debugging, circuit testing, and soldering prototypes.</li>
                 </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Projects</h2>
-            <ul class="list-unstyled">
-                <li>Led multiple Lego Robotics Projects, Block coding projects, Python projects, and Web designing projects at Windsor Day Champs.</li>
-                <li>Constructed ‘Line Following Robot’ in the 3rd year of my bachelor’s program.</li>
-                <li>Executed a ‘Solar & Wind Power harvesting with Solar detection’ project for my bachelor’s major project.</li>
-                <li>Designed and made ‘Automatic Street Light’ project during the 1st year of bachelors.</li>
-                <li>Created Parking Ticket System using Python Tkinter.</li>
-                <li>Developed Monthly Planner Website using HTML, CSS & JS.</li>
-            </ul>
-        </section>
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li>Master of Engineering in Electrical & Computer Engineering | University of Windsor | May 2023 – Oct 2024</li>
+            <li>Bachelor in Electrical & Electronics Engineering | VJIT | Mar 2017 – Aug 2021</li>
+        </ul>
+    </section>
 
-        <section id="other-work" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Other Work</h2>
-            <ul class="list-unstyled">
-                <li>Part-time cook at ‘Joeys Only Seafood’, Leamington (Jul 2023 - Present)</li>
-                <li>Volunteered at ‘Campus Community Garden’ in University of Windsor (Aug 2023)</li>
-                <li>Volunteered at ‘PowWow Event’ at University of Windsor (May 2023)</li>
-                <li>Worked as a Cashier at ‘Essex Fun Fest’ for 3 days (Jul 2023, Jul 2024)</li>
-                <li>Cook at ‘Monaco Shawarma’, Windsor (Dec 2023 - Feb 2024)</li>
-            </ul>
-        </section>
+    <section id="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <img src="D:\portfolio\1768768581656-c5e92c22-1de1-4552-9f1e-08af424b9491_1.jpg" alt="Certificate 0" class="certificate">
+            <img src="D:\portfolio\certificate-of-completion-for-altium-education-cumulative-quiz_page-0001.jpg" alt="Certificate 1" class="certificate">
+            <img src="D:\portfolio\CertificateOfCompletion_Electrical Systems Panel Boards Frequency Drives and Transformers_page-0001.jpg" alt="Certificate 2" class="certificate">
+            <img src="D:\portfolio\CertificateOfCompletion_Electrical Systems Reading Drawings and Schematics_page-0001.jpg" alt="Certificate 3" class="certificate">
+            <img src="D:\portfolio\CertificateOfCompletion_Electronics Foundations Basic Circuits_page-0001.jpg" alt="Certificate 4" class="certificate">
+            <img src="D:\portfolio\CertificateOfCompletion_Electronics Foundations Fundamentals_page-0001.jpg" alt="Certificate 5" class="certificate">
+            <img src="D:\portfolio\CertificateOfCompletion_Electronics Foundations Semiconductor Devices_page-0001.jpg" alt="Certificate 6" class="certificate">
+            <img src="D:\portfolio\Coursera CQFX0S1GJ4N8_page-0001.jpg" alt="Certificate 7" class="certificate">
+            <img src="D:\portfolio\Coursera FXAINDFG04GK_page-0001.jpg" alt="Certificate 8" class="certificate">
+        </div>
+    </section>
 
-        <section id="certifications" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Certifications</h2>
-            <ul class="list-unstyled">
-                <li>Certified Full Stack Web Development from Udemy</li>
-                <li>Python Certification from Coursera</li>
-                <li>AI for Everybody certification from Coursera</li>
-                <li>Certified from Robokart IIT Bombay and JNTUH for Android Botix</li>
-                <li>AI/ML certification from Bits Pilani Hyderabad</li>
-            </ul>
-        </section>
+</main>
 
-        <section id="languages" class="fade-in animate-text">
-            <h2 class="text-primary border-bottom pb-2">Languages Known</h2>
-            <ul class="list-unstyled">
-                <li>English (Fluent)</li>
-                <li>French (Beginner)</li>
-                <li>Hindi (Fluent)</li>
-                <li>Telugu (Fluent)</li>
-            </ul>
-        </section>
-    </main>
+<!-- Certificate popup modal -->
+<div id="cert-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="cert-modal-img">
+</div>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Carey Israel Pedapaga. All rights reserved.</p>
-    </footer>
+<footer>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/carey-israel-1209081b1/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/CareyIsrael" target="_blank">GitHub</a>
+    </div>
+    <p>&copy; 2026 Carey Israel. All rights reserved.</p>
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Fade-in effect for sections on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
+
